@@ -3,14 +3,14 @@ const cors = require("cors");
 const morgan = require("morgan");
 const colors = require("colors");
 const dotenv = require("dotenv");
-const connectDB = require("./server/config/db");
+const connectDB = require("./config/db");
 
 //env config
 dotenv.config();
 
 //router import
-const userRoutes = require("./server/routes/userRoutes");
-const blogRoutes = require("./server/routes/blogRoutes");
+const userRoutes = require("./routes/userRoutes");
+const blogRoutes = require("./routes/blogRoutes");
 
 //mongodb connection
 connectDB();
